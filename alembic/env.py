@@ -1,9 +1,6 @@
 import asyncio
 import os
 import sys
-import pkgutil
-import importlib
-import domains
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src")))
 
