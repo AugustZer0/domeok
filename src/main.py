@@ -27,4 +27,4 @@ async def health_check():
 
 @app.get("/a", status_code=200)
 async def error_aa():
-    return Exception
+    raise Exception("Test Exception")

@@ -7,6 +7,10 @@ import domains
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src")))
 
+import pkgutil
+import importlib
+import domains
+
 from logging.config import fileConfig
 
 from sqlalchemy import pool
