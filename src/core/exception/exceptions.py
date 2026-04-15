@@ -2,7 +2,7 @@ from core.exception.codes import ErrorCode
 
 
 class BaseCustomException(Exception):
-    def __init__(self, status_code: int, code: str, detail: str):
+    def __init__(self, status_code: int, code: str | ErrorCode, detail: str):
         self.status_code = status_code
         self.code = code
         self.detail = detail
